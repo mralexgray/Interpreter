@@ -103,15 +103,16 @@
 }
 
 - (void)output:(NSString *)message {
-    [CSNotificationView showInViewController:self
-                                       style:CSNotificationViewStyleSuccess
-                                     message:message];
+  NSLog(@"%@", message);
+//    [CSNotificationView showInViewController:self
+//                                       style:CSNotificationViewStyleSuccess
+//                                     message:message];
 }
 
 - (void)error:(NSString *)message {
-    [CSNotificationView showInViewController:self
-                                       style:CSNotificationViewStyleError
-                                     message:message];
+//    [CSNotificationView showInViewController:self
+//                                       style:CSNotificationViewStyleError
+//                                     message:message];
 }
 
 - (IBAction)execute:(id)sender {
@@ -119,9 +120,9 @@
 }
 
 - (IBAction)showInfo:(id)sender {
-    PBWebViewController *docuViewController = [[PBWebViewController alloc] init];
-    docuViewController.URL = [NSURL URLWithString:@"http://nodeapp.org/?utm_source=interpreter&utm_medium=App&utm_campaign=info"];
-    [self.navigationController pushViewController:docuViewController animated:YES];
+//    PBWebViewController *docuViewController = [[PBWebViewController alloc] init];
+//    docuViewController.URL = [NSURL URLWithString:@"http://nodeapp.org/?utm_source=interpreter&utm_medium=App&utm_campaign=info"];
+//    [self.navigationController pushViewController:docuViewController animated:YES];
 }
 
 
